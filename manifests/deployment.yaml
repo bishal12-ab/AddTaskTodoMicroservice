@@ -19,4 +19,4 @@ spec:
         - containerPort: 8000
         env: 
         - name: CONNECTION_STRING
-          value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:vishalsqlserver123.database.windows.net,1433;Database=vishalsqldb;Uid=sqladminuser;Pwd=SqlAdmin@12345;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"        
+          value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:microtodoui123.database.windows.net,1433;Database=bishaldatabase;Uid=sqladminuser;Pwd=SqlAdmin@12345;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"        
