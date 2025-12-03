@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: todo-add-tasks-api
-        image: pull bestacr12345.azurecr.io/todo-add-tasks-api:v1
+        image:  bestacr12345.azurecr.io/todo-add-tasks-api:v1
         ports:
         - containerPort: 8000
         
