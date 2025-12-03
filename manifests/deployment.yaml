@@ -18,6 +18,7 @@ spec:
         image: pull bestacr12345.azurecr.io/todo-add-tasks-api:v1
         ports:
         - containerPort: 8000
+        
         env: 
         - name: CONNECTION_STRING
           value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:microtodoui123.database.windows.net,1433;Database=bishaldatabase;Uid=sqladminuser;Pwd=SqlAdmin@12345;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"   
