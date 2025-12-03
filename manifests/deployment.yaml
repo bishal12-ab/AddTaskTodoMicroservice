@@ -4,7 +4,7 @@ metadata:
   name: todo-add-tasks-api
   
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: todo-add-tasks-api
@@ -15,9 +15,11 @@ spec:
     spec:
       containers:
       - name: todo-add-tasks-api
-        image: bestacr12345.azurecr.io/todo-add-tasks-api:v1
+        image: pull bestacr12345.azurecr.io/todo-add-tasks-api:v1
         ports:
         - containerPort: 8000
+        
         env: 
         - name: CONNECTION_STRING
-          value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:microtodoui123.database.windows.net,1433;Database=bishaldatabase;Uid=sqladminuser;Pwd=SqlAdmin@12345;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"        
+          value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:microtodoui123.database.windows.net,1433;Database=bishaldatabase;Uid=sqladminuser;Pwd=SqlAdmin@12345;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"   
+               
